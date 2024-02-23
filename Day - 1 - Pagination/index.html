@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <!-- Character set -->
+    <meta charset="UTF-8">
+    <!-- Responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the page -->
+    <title>Pagination By JavaScript</title>
+    <!-- Linking external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Container for data -->
+    <div class="main-container" id="data-container">
+        <!-- Title -->
+        <h1>Pagination in HTML, CSS & JavaScript</h1>
+        <!-- Container for cards -->
+        <div class="card-container">
+            <!-- Card 1 -->
+            <div class="card">
+                <!-- Image -->
+                <img src="https://media.geeksforgeeks.org/img-practice/banner/mern-full-stack-development-classroom-thumbnail.png?v=19630" alt="Image 1">
+                <!-- Title -->
+                <h3>Mern Stack Development Course</h3>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+                <!-- Image -->
+                <img src="https://media.geeksforgeeks.org/img-practice/banner/devops-live-thumbnail.png?v=19630" alt="Image 2">
+                <!-- Title -->
+                <h3>Dev Ops Live</h3>
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
+                <!-- Image -->
+                <img src="https://media.geeksforgeeks.org/img-practice/banner/gate-data-science-and-artificial-intelligence-da-2024-thumbnail.png?v=19630" alt="Image 3">
+                <!-- Title -->
+                <h3>Gate - Date Science & Artificial Intelligence</h3>
+            </div>
+            <!-- Card 4 -->
+            <div class="card">
+                <!-- Image -->
+                <img src="https://media.geeksforgeeks.org/img-practice/banner/gate-crash-course-2024-thumbnail.png?v=19630" alt="Image 4">
+                <!-- Title -->
+                <h3>Gate Crash Course 2024 </h3>
+            </div>
+            <!-- Card 5 -->
+            <div class="card">
+                <!-- Image -->
+                <img src="https://media.geeksforgeeks.org/img-practice/banner/complete-test-series-product-companies-thumbnail.png?v=19631" alt="Image 5">
+                <!-- Title -->
+                <h3>Complete Test Series Product Companies</h3>
+            </div>
+            <!-- Card 6 -->
+            <div class="card">
+                <!-- Image -->
+                <img src="https://media.geeksforgeeks.org/img-practice/banner/dsa-to-development-coding-guide-thumbnail.png?v=19630" alt="Image 6">
+                <!-- Title -->
+                <h3>DSA to Development Coding Guide</h3>
+            </div>
+            <!-- Card 7 -->
+            <div class="card">
+                <!-- Image -->
+                <img src="https://media.geeksforgeeks.org/img-practice/banner/geeks-classes-live-thumbnail.png?v=19630" alt="Image 7">
+                <!-- Title -->
+                <h3>Geeks Classes Live</h3>
+            </div>
+            <!-- Card 8 -->
+            <div class="card">
+                <!-- Image -->
+                <img src="https://media.geeksforgeeks.org/img-practice/banner/dsa-interview-preparation-classroom-thumbnail.png?v=19631" alt="Image 8">
+                <!-- Title -->
+                <h3>DSA Interview Preparation Classroom</h3>
+            </div>
+            <!-- Card 9 -->
+            <div class="card">
+                <!-- Image -->
+                <img src="https://media.geeksforgeeks.org/img-practice/banner/complete-interview-preparation-thumbnail.png?v=19631" alt="Image 9">
+                <!-- Title -->
+                <h3>Complete Interview Preparation</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination-container" id="pagination">
+		<div class="link-container">
+			<!-- Previous button -->
+			<a href="#" id="prev">Previous</a>
+			<!-- Page links -->
+			<a href="#" class="page-link" data-page="1">1</a>
+			<a href="#" class="page-link" data-page="2">2</a>
+			<a href="#" class="page-link" data-page="3">3</a>
+			<!-- Next button -->
+			<a href="#" id="next">Next</a>
+		</div>
+        <!-- Page numbers -->
+        <p class="page-container" id="page-number"></p>
+    </div>
+
+    <!-- Linking external JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
