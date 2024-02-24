@@ -1,0 +1,143 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+}
+
+/* Body Styles */
+body {
+  min-height: 100vh; /* Ensure body covers at least the entire viewport height */
+  gap: 30px;
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Flex direction - column */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  background-color: #D8D5F2; 
+}
+
+h1 {
+  color: black;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+
+/* Slider Container Styles */
+.slider-container {
+  max-width: 900px; /* Set maximum width */
+  overflow-x: hidden; /* Hide horizontal overflow */
+  position: relative; /* Position relative for absolute child elements */
+  background-color: white; 
+  border-radius: 10px; 
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Arrow Icon Container Styles */
+.slider-container .arrow-icon-container {
+  height: 100%; /* Occupy full height of the slider container */
+  width: 120px; /* Set width */
+  top: 0; /* Position from the top */
+  position: absolute; /* Position absolute for placement */
+  display: flex; 
+  align-items: center; 
+}
+
+/* Left Arrow Icon Container Styles */
+.arrow-icon-container:first-child {
+  left: 0; /* Position from the left */
+  display: none; /* Hide by default */
+  justify-content: flex-start; /* Align items to the start */
+  background: linear-gradient(90deg, white 60%, transparent);
+}
+
+/* Right Arrow Icon Container Styles */
+.arrow-icon-container:last-child {
+  right: 0; /* Position from the right */
+  display: flex; /* show by default */
+  justify-content: flex-end; /* Align items to the end */
+  background: linear-gradient(-90deg, white 60%, transparent);
+}
+
+/* Arrow Icon Styles */
+.arrow-icon-container i {
+  width: 55px;
+  height: 55px; 
+  cursor: pointer; 
+  font-size: 1.2rem;
+  text-align: center; 
+  line-height: 55px;
+  border-radius: 50%; 
+  border: 1px solid #D8D5F2;
+  color: #8D4BF6;
+  transition: all 0.3s ease-in-out; /* Add transition effect */
+}
+
+/* Hover Effect on Arrow Icons */
+.arrow-icon-container i:hover {
+  color: white; 
+  background-color: #8D4BF6; 
+  border: 1px solid #D8D5F2; 
+}
+
+/* Left Margin for Left Arrow Icon */
+.arrow-icon-container:first-child i {
+  margin-left: 20px; /* Add left margin */
+}
+
+/* Right Margin for Right Arrow Icon */
+.arrow-icon-container:last-child i {
+  margin-right: 20px; /* Add right margin */
+} 
+
+/* Tab Container Styles */
+.slider-container .tab-container {
+  gap: 10px; 
+  display: flex;
+  list-style: none;
+  overflow-x: hidden; /* Hide horizontal overflow */
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+/* Tab Styles */
+.tab-container .tab {
+  font-size: 16px;
+  white-space: nowrap; /* Prevent text wrapping */
+  cursor: pointer;
+  color: white; 
+  background-color: #8D4BF6; 
+  border-radius: 30px;
+  border: 1px solid #8D4BF6;
+  padding: 13px 20px;
+  transition: all 0.3s ease-in-out; /* Add transition effect */
+}
+
+/* Hover Effect on Tabs */
+.tab-container .tab:hover {
+  color: #8D4BF6;
+  background: #EFEDFB;
+  border: 1px solid #D8D5F2;
+}
+
+/* Active Tab Styles */
+.tab-container .tab.active {
+  color: #8D4BF6;
+  background: #EFEDFB;
+  border: 1px solid #D8D5F2;
+}
+
+/* Dragging Effect for Tab Container */
+.tab-container.dragging {
+  cursor: grab; /* Change cursor to grab */
+  scroll-behavior: auto; /* Reset scroll behavior */
+}
+
+/* Disable Tabs during Dragging */
+.tab-container.dragging .tab {
+  user-select: none; /* Disable text selection */
+  pointer-events: none; /* Disable pointer events */
+}

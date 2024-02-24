@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <!-- Character set -->
+    <meta charset="UTF-8">
+    <!-- Responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title for the page -->
+    <title>Form Validation By JavaScript</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <!-- Heading for the form -->
+        <h1>Form Validation</h1>
+        <!-- Form starts here -->
+        <form action="#" method="POST">
+            <!-- Name input field -->
+            <div class="column">
+                <label for="name">Name *</label>
+                <input type="text" name="name" id="name" placeholder="Name" autocomplete="off">
+            </div>
+            <!-- Email input field -->
+            <div class="column">
+                <label for="email">Email *</label>
+                <input type="email" name="email" id="email" placeholder="name@example.com" autocomplete="off">
+            </div>
+            <!-- Mobile number input field -->
+            <div class="column">
+                <label for="number">Mobile *</label>
+                <input type="tel" name="number" id="number" placeholder="+91-XXXXX-XXXXX" autocomplete="off">
+            </div>
+            <!-- Message input field -->
+            <div class="column">
+                <label for="message">Message *</label>
+                <textarea name="message" id="message" cols="30" rows="6" placeholder="Please Enter Your Message" autocomplete="off"></textarea>
+            </div>
+            <!-- Submit button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
