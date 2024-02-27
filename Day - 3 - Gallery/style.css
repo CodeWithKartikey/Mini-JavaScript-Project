@@ -1,0 +1,169 @@
+/* Reset default margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Set default font family */
+}
+
+/* Styles for the body */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #EFEDFB;
+}
+
+/* Heading style */
+h2 {
+    font-size: 34px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    word-spacing: normal;
+    text-transform: capitalize;
+    text-decoration: underline;
+    margin-bottom: 30px;
+}
+
+/* Styles for the gallery container */
+.gallery-container {
+    width: 70vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for the media image */
+.media-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Styles for photo thumbnails */
+.photo-thumbnails {
+    gap: 3rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Styles for photo thumbnails images */
+.photo-thumbnails img {
+    border: none;
+    cursor: pointer;
+    object-fit: cover;
+    border-radius: 0.2rem;
+    aspect-ratio: 3 / 2;
+    width: calc(33.33% - 2rem);
+    transition: box-shadow 0.4s ease;
+}
+
+/* Hover effect for photo thumbnails images */
+.photo-thumbnails img:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+}
+
+/* Styles for media lightbox container */
+.media-lightbox-container {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: none;
+    position: fixed;
+}
+
+/* Styles for media lightbox overlay */
+.media-lightbox-overlay {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Styles for media lightbox */
+.media-lightbox {
+    top: 50%;
+    left: 50%;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+/* Styles for media lightbox image */
+.media-lightbox img {
+    width: 100%;
+    height: 500px;
+    display: block;
+    object-fit: cover;
+}
+
+/* Styles for previous and next buttons */
+.prev-btn,
+.next-btn {
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: black;
+    background-color: #8D4BF6;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 15px 20px;
+}
+
+/* Styles for previous button */
+.prev-btn {
+    left: 1rem;
+}
+
+/* Styles for next button */
+.next-btn {
+    right: 1rem;
+}
+
+/* Styles for close button */
+.close-btn {
+    top: 1rem;
+    right: 1rem;
+    position: absolute;
+    color: black;
+    background-color: #8D4BF6;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 15px 20px;
+}
+
+/* Styles for gallery index */
+.gallery-index {
+    color: black;
+    font-size: 15px;
+    top: 1rem;
+    left: 1rem;
+    position: absolute;
+}

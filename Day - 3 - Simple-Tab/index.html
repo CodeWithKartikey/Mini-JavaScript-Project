@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <!-- Character set -->
+        <meta charset="UTF-8">
+        <!-- Responsive viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title for the page -->
+        <title>Tab By Javascript</title>
+        <!-- Link to external stylesheet -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <div class="tab-container">
+        <!-- Tab buttons -->
+        <div class="tab">
+            <button class="tablinks active" onclick="openTab(event, 'Tab1')">HTML</button>
+            <button class="tablinks" onclick="openTab(event, 'Tab2')">CSS</button>
+            <button class="tablinks" onclick="openTab(event, 'Tab3')">JavaScript</button>
+        </div>
+        <!-- Tab content -->
+        <div id="Tab1" class="tabcontent">
+            <h3>HTML - HyperText Markup Language</h3>
+            <p>HTML, or HyperText Markup Language, is the standard language used to create and design web pages. It consists of a series of elements or tags that structure the content of a webpage, defining different parts such as headings, paragraphs, links, images, and more. HTML uses a markup syntax comprising opening and closing tags to enclose content and provide instructions to web browsers on how to display it. It serves as the backbone of the World Wide Web, enabling the creation of visually appealing and interactive websites by integrating various media types, styling with CSS, and adding functionality through JavaScript.</p>
+        </div>
+        <div id="Tab2" class="tabcontent">
+            <h3>CSS - Cascading Style Sheets</h3>
+            <p>CSS (Cascading Style Sheets) is a styling language used to define the presentation of HTML and XML documents. It dictates how elements should be displayed on a web page, including layout, colors, fonts, and other visual aspects. CSS separates the content of a webpage from its design, enhancing maintainability and flexibility. By applying CSS rules, designers can achieve consistent styling across multiple pages and devices. It operates on a cascading principle, where multiple style sheets can influence the same element, with the most specific rules taking precedence. CSS enables developers to create visually appealing and responsive web interfaces, enhancing user experience.</p>
+        </div>
+        <div id="Tab3" class="tabcontent">
+            <h3>JavaScript</h3>
+            <p>JavaScript is a versatile programming language primarily used for web development to enhance interactivity and functionality on websites. It allows developers to create dynamic content, manipulate webpage elements, handle user input, and communicate with servers asynchronously. JavaScript is executed on the client-side, meaning it runs in the user's browser, enabling real-time updates without reloading the page. Its flexibility and wide adoption make it a crucial tool for creating interactive web applications. JavaScript is also utilized beyond web development, including server-side programming, mobile app development, game development, and even desktop application development through frameworks like Node.js.</p>
+        </div>
+    </div>
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
