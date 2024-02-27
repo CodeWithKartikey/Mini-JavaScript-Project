@@ -1,0 +1,127 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Set default font family */
+}
+
+/* Body Styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #EFEDFB;
+}
+
+/* Heading Styles */
+h2 {
+    font-size: 34px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    word-spacing: normal;
+    text-transform: capitalize;
+    text-decoration: underline;
+    margin-bottom: 30px;
+}
+
+/* Carousel Container Styles */
+.carousel-container {
+    width: 40vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 4px;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Carousel Styles */
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Carousel Box Styles */
+.carousel-box {
+    display: flex;
+}
+
+/* Carousel Slide Styles */
+.carousel-slide {
+    flex: 0 0 100%;
+}
+
+.carousel-slide img {
+    opacity: 0.8;
+    width: 100%;
+    height: 400px;
+}
+
+/* Carousel Button Styles */
+.carousel button {
+    z-index: 2;
+    font-size: 15px;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    border: 1px solid #8D4BF6;
+    color: white;
+    background-color: #8D4BF6;
+    padding: 5px 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.carousel button:hover {
+    color: #8D4BF6;
+    background-color: #EFEDFB;
+    border: 1px solid #D8D5F2;
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+/* Carousel Indicators Styles */
+.carousel-indicators {
+    text-align: center;
+    left: 50%;
+    bottom: 10px;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.carousel-indicator {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #D8D5F2;
+    background-color: #EFEDFB;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.carousel-indicator:hover {
+    background-color: #D8D5F2;
+}
+
+.carousel-indicator.active {
+    background-color: #8D4BF6;
+    border: 1px solid #8D4BF6;
+}
