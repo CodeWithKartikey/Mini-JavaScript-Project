@@ -17,7 +17,7 @@ Welcome to the Mini JavaScript Project repository. This repository is a curated 
 
     Many More...
 
-Many Mini JS Projects will also come soon to this repo - 'Mini JavaScript Project'.
+Many Mini JS Projects will also come soon to this repo - 'Mini JavaScript Project'. 😎
 
 ## Usage
 
@@ -25,7 +25,9 @@ Each project is contained within its own directory. To explore a project, naviga
 
 ## Contributions
 
-Contributions are welcome! If you have a mini JavaScript project that you'd like to add to this repository, please follow these steps:
+Contributions are welcome. 🫡
+
+If you have a mini JavaScript project that you'd like to add to this repository, please follow these steps:
 
 1. Fork the repository.
 2. Create a new branch (`git checkout -b feature/add-new-project`).
@@ -39,5 +41,10 @@ Please ensure that your project adheres to the repository's standards and includ
 
 This project is licensed under the MIT License.
 
-Thank you for exploring the Mini JavaScript Project repository! 
-Happy coding! 🚀
+Thank you for exploring the Mini JavaScript Project repository. 😁 
+
+---
+
+Happy coding. 🚀
+
+---
