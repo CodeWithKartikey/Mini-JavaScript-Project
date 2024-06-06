@@ -41,10 +41,10 @@ Please ensure that your project adheres to the repository's standards and includ
 
 This project is licensed under the MIT License.
 
-Thank you for exploring the Mini JavaScript Project repository. 😁 
-
 ---
 
-Happy coding. 🚀
+Thank you for exploring the Mini JavaScript Project repository. 😁 
+
+Designed, Developed & Maintained by CodeWithKartikey - Happy coding. 🚀
 
 ---
